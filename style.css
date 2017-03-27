@@ -7,15 +7,15 @@ body {
     width: auto;
 }
 
-#tab2:hover{
+#tab1:hover{
     background-color: #a5d6a7;
 }
 
-#tab3:hover{
+#tab2:hover{
     background-color: #ffcc80;
 }
 
-#tab4:hover{
+#tab3:hover{
     background-color: #81d4fa;
 }
 
