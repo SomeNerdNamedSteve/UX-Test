@@ -1,0 +1,106 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+#logo{
+    height: 80px;
+    width: auto;
+}
+
+#tab2:hover{
+    background-color: #a5d6a7;
+}
+
+#tab3:hover{
+    background-color: #ffcc80;
+}
+
+#tab4:hover{
+    background-color: #81d4fa;
+}
+
+.image-resize{
+    height: 100px;
+    width: auto;
+}
+
+.logo{
+    float: left;
+}
+
+.right-permeated{
+    float: right;
+}
+
+.data{
+    align-content: center;
+}
+
+.profile-pic{
+    float: right;
+    width: 150px;
+    height: auto;
+}
+
+.user-info{
+    float: right;
+    vertical-align: top;
+}
+
+.pseudo-jumbotron{
+    background-color: #8a2be2;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.top-bar{
+    display: inline;
+}
+
+.tab-spacing{
+    width: 100%;
+}
+
+.img-circle{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    float: right;
+    border-right: 10px;
+    border-top: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

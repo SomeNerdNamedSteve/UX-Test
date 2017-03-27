@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crossover UI Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="circle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        //this occurs when a food item is clicked
+        function foodClicked(){
+            alert("If this were an actual application, this would increment the number of servings eaten for that food group.");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <div style="float: right;">
+                <br>
+                <img class="img-circle" class="image-resize" src="images/profile.png">
+            </div>
+
+            <div style="float: right;">
+                <br>
+                <p style="float: right">Hello, Timothy!</p><br>
+                <p style="float: right">Last Login: Aug. 9th, 2011</p>
+            </div>
+            <img id="logo" src="images/MyDietFriend.png"/>
+
+        </div>
+
+    </div>
+    <div id="main">
+
+        <div class="container">
+            <ul class="nav nav-tabs nav-justified tab-spacing">
+                <li><a id="tab2" data-toggle="tab" href="#menu2">MyDiet</a></li>
+                <li><a id="tab3" data-toggle="tab" href="#menu3">MyTrack</a></li>
+                <li><a id="tab4" data-toggle="tab" href="#menu4">MySettings</a></li>
+            </ul>
+                <div class="tab-content">
+                    <div id="menu2" class="tab-pane fade">
+                        <h3>MyDiet</h3>
+                        <p>Current Diet: Mediterranean Diet</p>
+                        <p>Diet Start: July 7th, 2011</p>
+                        <br><h4>Click on a food you ate to add a serving to your MyTrack.</h4><br>
+                        <div class="row text-center">
+                            <div class="col-sm-2">
+                                <img class="image-resize" src="images/food/apple.png" onclick="foodClicked"/>
+                                <h5>Fruit</h5>
+                                <h5>Servings Consumed: 2</h5>
+                            </div>
+                            <div class="col-sm-2">
+                                <img class="image-resize" src="images/food/cabbage.png" onclick="foodClicked()"/>
+                                <h5>Vegetables</h5>
+                                <h5>Servings Consumed: 3</h5>
+                            </div>
+                            <div class="col-sm-2">
+                                <img class="image-resize" src="images/food/beans.png" onclick="foodClicked()"/>
+                                <h5>Legumes</h5>
+                                <h5>Servings Consumed: 1</h5>
+                            </div>
+                            <div class="col-sm-2">
+                                <img class="image-resize" src="images/food/grain.png" onclick="foodClicked()"/>
+                                <h5>Grains</h5>
+                                <h5>Servings Consumed: 1</h5>
+                            </div>
+                            <div class="col-sm-2">
+                                <img class="image-resize" src="images/food/fish.png" onclick="foodClicked()"/>
+                                <h5>Lean Meat</h5>
+                                <h5>Servings Consumed: 1</h5>
+                            </div>
+                            <div class="col-sm-2">
+                                <img class="image-resize" src="images/food/steak.png" onclick="foodClicked()"/>
+                                <h5>Red Meat</h5>
+                                <h5>Servings Consumed: 1</h5>
+                            </div>
+                        </div><br><br>
+
+                        <div class="row text-center">
+                            <div class="col-sm-2">
+                                <img class="image-resize" src="images/food/candy.png" onclick="foodClicked()"/>
+                                <h5>Sugar</h5>
+                                <h5>Servings Consumed: 0</h5>
+                            </div>
+                            <div class="col-sm-2">
+                                <img class="image-resize" src="images/food/can.png" onclick="foodClicked()"/>
+                                <h5>Carbonated Beverages</h5>
+                                <h5>Servings Consumed: 2</h5>
+                            </div>
+                            <div class="col-sm-2">
+                                <img class="image-resize" src="images/food/glass.png" onclick="foodClicked()"/>
+                                <h5>Alcoholic Beverages</h5>
+                                <h5>Servings Consumed: 1</h5>
+                            </div>
+                        </div>
+                        <br><br><h4>QuickTrack</h4>
+                        <div class="c100 p75 orange">
+                            <span>75%</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div><br><br>
+                        <p class="text-success">9 healthy food servings</p>
+                        <p class="text-danger">3 unhealthy food servings</p>
+                        <br><br><br>
+                        <h4>Diet Tips</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success">
+                                Eat plenty of plant foods: fruits, vegetables, legumes (beans, peas, etc.), and nuts.
+                            </li>
+                            <li class="list-group-item list-group-item-success">
+                                The less processed food are, the better.  Try fresh and local fruits.
+                            </li>
+                            <li class="list-group-item list-group-item-success">
+                                Eat Dairy Products, better low hot products, and at least one portion in the form of
+                                feremented products, like yogurt or kefir.
+                            </li>
+                            <li class="list-group-item list-group-item-danger">
+                                Red meats should be eaten in moderation and, if possible, as a part of stews or
+                                other recipes.
+                            </li>
+                            <li class="list-group-item list-group-item-danger">
+                                Sweetened, carbonated and alcoholic beverages must be avoided.  Replace your
+                                beverage or drink of choice with water or unsweetened tea.
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <h3>MyTrack</h3>
+                        <div class="row">
+                            <div class="col-sm-6 data">
+                                <h4>Today</h4>
+                                <div class="c100 p75 orange">
+                                    <span>75%</span>
+                                    <div class="slice">
+                                        <div class="bar"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div><br><br>
+                                <p class="text-success">9 healthy food servings</p>
+                                <p class="text-danger">3 unhealthy food servings</p>
+                            </div>
+                            <div class="col-sm-6 data">
+                                <h4>Last 7 Days</h4>
+                                <div class="c100 p83 green">
+                                    <span>83%</span>
+                                    <div class="slice">
+                                        <div class="bar"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div><br><br>
+                                <p>This is your progress over the past week.  Good Job!  Keep it up!</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 data">
+                                <h4>Last 30 Days</h4>
+                                <div class="c100 p58">
+                                    <span>58%</span>
+                                    <div class="slice">
+                                        <div class="bar"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div><br><br>
+                                <p>This is your progress over the past 30 days.</p>
+                            </div>
+                            <div class="col-sm-6 data">
+                                <h4>Goal</h4>
+                                <div class="c100 p95 green">
+                                    <span>95%</span>
+                                    <div class="slice">
+                                        <div class="bar"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div><br><br>
+                                <p>This is your goal set by your doctor.  Make sure to follow up with them to modify
+                                your plan as needed.</p>
+                            </div>
+                        </div><br><br>
+                        <h4>MyTrack Summary</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success">
+                                Most Consumed Food Group: Fruit
+                            </li>
+                            <li class="list-group-item list-group-item-danger">
+                                Least Consumed Food Group: Legumes
+                            </li>
+                            <li class="list-group-item list-group-item-success">
+                                Weekly improvement: High
+                            </li>
+                        </ul><br>
+                        <h4>Improvements</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-info">
+                                Try to eat meat more sparingly.  Start by eating it every other day.  Try replacing
+                                meat with fish or legumes.
+                            </li>
+                            <li class="list-group-item list-group-item-info">
+                                Eat white meat preferably as opposed to red meat.
+                            </li>
+                            <li class="list-group-item list-group-item-info">
+                                Try to have more legumes as opposed to meat.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="menu4" class="tab-pane fade">
+                        <h3>MySettings</h3>
+                        <br>
+                        <h4>User Settings</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Change Profile Picture
+                            </li>
+                            <li class="list-group-item">
+                                Change Username
+                                <span class="badge">tjonson44</span>
+                            </li>
+                            <li class="list-group-item">
+                                Change Password
+                                <span class="badge">********</span>
+                            </li>
+                            <li class="list-group-item">
+                                Change Diet
+                                <span class="badge">Current Diet: Mediterranean</span>
+                            </li>
+                            <li class="list-group-item">
+                                Change Credit Card
+                                <span class="badge">Current Credit Card: **** **** **** 7890</span>
+                            </li>
+                            <li class="list-group-item">
+                                Change Dietician
+                                <span class="badge">Current Dietician: Dr. Seymour Rumbak</span>
+                            </li>
+                        </ul>
+                        <br>
+                        <h4>Medical Settings</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                View Medical Records
+                                <span class="badge">Last Viewed: Aug 9th, 2011</span>
+                            </li>
+                            <li class="list-group-item">
+                                Change Primary Clinic
+                                <span class="badge">Current Clinic: Smith Medical Practice</span>
+                            </li>
+                        </ul>
+                        <br>
+                        <h4>Other Settings</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Set Up Appointment
+                                <span class="badge">Next Appt.: Sept. 15, 2011</span>
+                            </li>
+                            <li class="list-group-item">
+                                Plan Add-ons
+                            </li>
+                        </ul>
+                        <button type="Button" class="btn btn-info">Log Out</button><br><br>
+
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <h6 class="text-center">Copyright 2017 Moruga Nutrition</h6>
+</footer>
+</html>
